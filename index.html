@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customizable User Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="profile-container">
+        <div class="profile-header">
+            <img id="profile-picture" src="default-img.jpg" alt="Profile Picture">
+            <button id="change-picture">Change Picture</button>
+        </div>
+
+        <div class="profile-info">
+            <h2 id="user-name">John Doe</h2>
+            <p id="user-bio">This is the default bio. You can customize it!</p>
+            <button id="edit-profile">Edit Profile</button>
+        </div>
+    </div>
+
+    <div id="edit-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Edit Profile</h2>
+            <label for="name">Name:</label>
+            <input type="text" id="name" value="John Doe">
+            <label for="bio">Bio:</label>
+            <textarea id="bio">This is the default bio. You can customize it!</textarea>
+            <label for="picture">Profile Picture URL:</label>
+            <input type="text" id="picture" placeholder="Enter Image URL">
+            <button id="save-profile">Save Changes</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
